@@ -49,6 +49,13 @@ Geralmente colocamos aqui variaveis como key de api, links, por padrao o vite pe
         VITE_SEARCH=https://api.themoviedb.org/3/search/movie/
         vite_img=https://image.tmdb.org/t/p/w500
 
+> Usando variaveis do .env como consts
+
+        const moviesURL = import.meta.env.VITE_API_SITE
+        const apiKey = import.meta.env.VITE_API_KEY
+        
+- o import.meta.env eh necessario para o React entender de onde vem a variavel
+
 ## Criando Rotas
 
 - Crie umas pasta dentro de src chamada pages e crie arquivos .jsx com os nomes das rotas
@@ -137,11 +144,6 @@ Iremos requisitar dados vindos de uma api para isso iremos criar algumas estrutu
         const moviesURL = import.meta.env.VITE_API_SITE
         const apiKey = import.meta.env.VITE_API_KEY
 
-> Atribuindo as variaveis de ambiente .env em const
-
-        const moviesURL = import.meta.env.VITE_API_SITE
-        const apiKey = import.meta.env.VITE_API_KEY
-
 > Criando um useState para agrupar os melhores filmes que vem da api sera um array vazio
 
         const [topMovies, setTopMovies] = useState([])
@@ -176,6 +178,6 @@ O use effect permite executar uma funcao em alguns estagios da aplicacao por exe
 Para ver os dados no dev tools va na aba "NETWORK" > FETCH/XHR > clique na requisicao do status 200 na aba que se abre va em preview
 
 
-
+npm run  
 
 # parei no 27:10 - projeto de filmes com react e api https://www.youtube.com/watch?v=XqxUHVVO7-U
