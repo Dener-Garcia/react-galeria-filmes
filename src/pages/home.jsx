@@ -1,7 +1,6 @@
 import React from "react"
 import Best20movies from "../components/best20movies"
-
-import Card from "../components/movie-card"
+import MovieCard from "../components/movie-card"
 
 
 const Home = () => {
@@ -10,7 +9,6 @@ const Home = () => {
         <>
         <h1>Home</h1>
        <Best20movies />
-
         </>
     )
 }
