@@ -1,5 +1,4 @@
 import React from "react"
-import Card from "../components/movie-card"
 
 const Search = () => {
     return (

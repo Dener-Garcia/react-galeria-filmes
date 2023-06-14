@@ -1,5 +1,7 @@
 import React from "react"
-import Best20movie from "../components/best20movies"
+import Best20movies from "../components/best20movies"
+
+import Card from "../components/movie-card"
 
 
 const Home = () => {
@@ -7,9 +9,7 @@ const Home = () => {
     return(
         <>
         <h1>Home</h1>
-
-        <Best20movie/>
-
+       <Best20movies />
 
         </>
     )
