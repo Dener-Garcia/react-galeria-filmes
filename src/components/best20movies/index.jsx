@@ -24,7 +24,7 @@ const Best20movie = () => {
 
     getTopRatedMovies(topRatedUrl);
 
-    console.log(topRatedUrl);
+    // console.log(topRatedUrl);
   }, []);
 
   return (
@@ -33,7 +33,7 @@ const Best20movie = () => {
     <div className="movies-container">
       {topMovies.lenght === 0 && <p>Estamos preparando sua lista de filmes</p>}
       {topMovies.length > 0 &&
-        topMovies.map((objetoApiResults) => <MovieCard apiResultsBest20Movies={objetoApiResults}/>)}
+        topMovies.map((objetoApiResults) => <MovieCard key={topMovies .id} apiResultsBest20Movies={objetoApiResults}/>)}
         </div>
     </div>
   );
